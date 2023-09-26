@@ -1,0 +1,126 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Neutral Face";
+  color: white;
+  overflow: hidden;
+  background-color: #1c1c1c;
+}
+span {
+  display: block;
+  overflow: hidden;
+}
+/* loader  */
+.loader {
+  position: absolute;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  z-index: 30;
+  overflow: hidden;
+  display: flex;
+  background-color: #1c1c1c;
+  align-items: center;
+  justify-content: center;
+}
+.loader .loader-logo {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0px;
+  font-size: 14px;
+}
+.loader .loader-images {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.loader .loader-image {
+  scale: 1.3;
+  opacity: 0;
+}
+.loader .img-hr {
+  position: absolute;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.loader .img-vr {
+  position: absolute;
+  height: 50vh;
+  object-fit: contain;
+}
+.loader .loading-bar {
+  display: flex;
+  width: 250px;
+  height: 1px;
+  background-color: white;
+}
+
+/* main section  */
+header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0px;
+  font-size: 14px;
+}
+header .logo,
+header .info {
+  padding: 0px 25px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0px 25px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+.container > .main-text .main-text-heading {
+  font-size: 29vw;
+  padding: 0px 10px;
+  letter-spacing: -1.2vw;
+  font-family: "August";
+  font-weight: bold;
+  color: #b23838;
+  margin-left: -1vw;
+}
+.container > .para-text {
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.container > .scroll-down {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: -5px;
+}
+.container > .scroll-down .scroll-down-bar {
+  height: 40px;
+  width: 1px;
+  background-color: white;
+}
